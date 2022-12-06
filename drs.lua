@@ -29,8 +29,8 @@ local Window = Rayfield:CreateWindow({
 	},
         Discord = {
         	Enabled = false,
-        	Invite = "4vT5j8efrg", -- The Discord invite code, do not include discord.gg/
-        	RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+        	Invite = "", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
         },
 	KeySystem = false, -- Set this to true to use our key system
 	KeySettings = {
@@ -42,21 +42,6 @@ local Window = Rayfield:CreateWindow({
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
 		Key = "milk"
 	}
-})
-
-Rayfield:Notify({
-    Title = "Doors script By Shadow's Scripts",
-    Content = "Join our discord discord.gg/4vT5j8efrg For more!",
-    Duration = 1,
-    Image = 5962561114,
-    Actions = { -- Notification Buttons
-        Ignore = {
-            Name = "Okay!",
-            Callback = function()
-                print("4.5")
-            end
-		},
-	},
 })
 
 local Tab = Window:CreateTab("Spawner", 7539983780) -- Title, Image
@@ -1244,7 +1229,7 @@ local Section = Tab:CreateSection("Spawn key binds")
 
 local Keybind = Tab:CreateKeybind({
 	Name = "Spawn Screech",
-	CurrentKeybind = "Z",
+	CurrentKeybind = "",
 	HoldToInteract = false,
 	Flag = "PSTTAHHH", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
@@ -1254,7 +1239,7 @@ local Keybind = Tab:CreateKeybind({
 
 local Keybind = Tab:CreateKeybind({
 	Name = "Spawn Halt",
-	CurrentKeybind = "X",
+	CurrentKeybind = "",
 	HoldToInteract = false,
 	Flag = "HoldX", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
@@ -1264,7 +1249,7 @@ local Keybind = Tab:CreateKeybind({
 
 local Keybind = Tab:CreateKeybind({
 	Name = "Spawn Glitch",
-	CurrentKeybind = "V",
+	CurrentKeybind = "",
 	HoldToInteract = false,
 	Flag = "GLITCHKE", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
@@ -1274,7 +1259,7 @@ local Keybind = Tab:CreateKeybind({
 
 local Keybind = Tab:CreateKeybind({
 	Name = "Spawn Timothy",
-	CurrentKeybind = "B",
+	CurrentKeybind = "",
 	HoldToInteract = false,
 	Flag = "TIMK", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
@@ -1284,7 +1269,7 @@ local Keybind = Tab:CreateKeybind({
 
 local Keybind = Tab:CreateKeybind({
 	Name = "Spawn Ambush",
-	CurrentKeybind = "I",
+	CurrentKeybind = "",
 	HoldToInteract = false,
 	Flag = "AMBUSHK", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
@@ -1926,7 +1911,7 @@ local Button = Tab:CreateButton({
 
 local Keybind = Tab:CreateKeybind({
 	Name = "Skip Door Key",
-	CurrentKeybind = "P",
+	CurrentKeybind = "R",
 	HoldToInteract = false,
 	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Keybind)
